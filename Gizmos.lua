@@ -6,7 +6,7 @@ local RUN_SERVICE = game:GetService("RunService")
 
 --// CONSTANTS //--
 
-local POOL = require(script.Pool).new()
+local POOL = require(script.Parent.Pool).new()
 
 local NORMALID_TO_DIRECTION = {
 	[Enum.NormalId.Right] = Vector3.new(1, 0, 0),
