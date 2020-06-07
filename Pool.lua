@@ -6,7 +6,6 @@ local GIZMO_TYPES = {
 	["BoxHandleAdornment"] = true,
 	["ConeHandleAdornment"] = true,
 	["CylinderHandleAdornment"] = true,
-	["LineHandleAdornment"] = true,
 	["SphereHandleAdornment"] = true
 }
 
@@ -25,14 +24,12 @@ function CLASS.new()
 				["BoxHandleAdornment"] = {},
 				["ConeHandleAdornment"] = {},
 				["CylinderHandleAdornment"] = {},
-				["LineHandleAdornment"] = {},
 				["SphereHandleAdornment"] = {}
 			},
 			busyGizmos = {
 				["BoxHandleAdornment"] = {},
 				["ConeHandleAdornment"] = {},
 				["CylinderHandleAdornment"] = {},
-				["LineHandleAdornment"] = {},
 				["SphereHandleAdornment"] = {}
 			}
 		},
