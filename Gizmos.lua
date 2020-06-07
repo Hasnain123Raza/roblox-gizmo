@@ -99,16 +99,6 @@ function LIBRARY.drawRay(ray, radius)
 end
 ----
 
--- Line Adornment Functions --
-function LIBRARY.drawLinePrimitive(cframe, thickness, length)
-	cframe = toCFrame(cframe)
-	local gizmo = POOL:generateGizmo("LineHandleAdornment", gizmoColor, gizmoTransparency)
-	gizmo.CFrame = cframe
-	gizmo.Thickness = thickness
-	gizmo.Length = length
-end
-----
-
 -- Sphere Adornment Functions --
 function LIBRARY.drawSphere(cframe, radius)
 	cframe = toCFrame(cframe)
