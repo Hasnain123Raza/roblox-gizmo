@@ -114,13 +114,10 @@ end
 
 --// INSTRUCTIONS //--
 
-RUN_SERVICE:BindToRenderStep(
-	"GIZMO_UPDATE",
-	Enum.RenderPriority.Camera.Value - 1,
-	function()
-		POOL:freeAllGizmos()
-		LIBRARY.onDrawBindableEvent:Fire(LIBRARY)
-	end
-)
+
+RUN_SERVICE.Heartbeat:Connect(function()
+	POOL:freeAllGizmos()
+	LIBRARY.onDrawBindableEvent:Fire(LIBRARY)
+end)
 
 return LIBRARY
